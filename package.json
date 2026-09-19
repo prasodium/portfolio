@@ -2,6 +2,7 @@
   "name": "my-portfolio",
   "private": true,
   "version": "0.0.0",
+  "description": "Personal portfolio of Harprosad Mandal, a full-stack developer. Built with React, Vite and a WebGL particle background, and hosted on GitHub Pages.",
   "type": "module",
   "scripts": {
     "dev": "vite",
