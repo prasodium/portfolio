@@ -201,7 +201,8 @@ The site is hosted on GitHub Pages and deploys automatically. Every push to `mai
 | Projects | The `projectsData` array in `src/pages/Projects.jsx` |
 | Email address and social links | `src/pages/Contact.jsx` |
 | Colors and fonts | The custom properties at the top of `src/index.css` |
-| Page title and favicon | `index.html` and `public/icon.svg` |
+| Page title and description | `index.html` |
+| Favicon | `public/icon.svg` |
 
 </details>
 
