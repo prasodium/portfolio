@@ -15,10 +15,12 @@ A personal portfolio for a full-stack developer who builds things for the web.
 </p>
 
 <p>
+  <a href="https://prasodium.github.io/portfolio/">Live Site</a> |
   <a href="#features">Features</a> |
   <a href="#tech-stack">Tech Stack</a> |
   <a href="#getting-started">Getting Started</a> |
   <a href="#available-scripts">Scripts</a> |
+  <a href="#deployment">Deployment</a> |
   <a href="#folder-structure">Structure</a> |
   <a href="#customization">Customization</a> |
   <a href="#contributing">Contributing</a>
@@ -35,6 +37,7 @@ A personal portfolio for a full-stack developer who builds things for the web.
 - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
 - [Available Scripts](#available-scripts)
+- [Deployment](#deployment)
 - [Folder Structure](#folder-structure)
 - [Customization](#customization)
 - [Contributing](#contributing)
@@ -43,7 +46,7 @@ A personal portfolio for a full-stack developer who builds things for the web.
 
 ## Overview
 
-A single-page portfolio built with React and Vite. It introduces the developer, lists their skills, showcases projects and gives visitors a way to get in touch. The site uses a dark theme with a teal accent, a WebGL particle background in the hero section, and a layout that adapts to mobile screens.
+A single-page portfolio built with React and Vite. It introduces the developer, lists their skills, showcases projects and gives visitors a way to get in touch. The site uses a dark theme with a teal accent, a WebGL particle background in the hero section, and a layout that adapts to mobile screens. The live site is hosted on GitHub Pages at [prasodium.github.io/portfolio](https://prasodium.github.io/portfolio/).
 
 <p align="right"><a href="#harprosad-mandal-portfolio">Back to top</a></p>
 
@@ -105,6 +108,7 @@ Sections fade in once, when 10% of the section is visible. Scrolling between sec
 | Plain CSS | Styling, with theme colors and fonts defined as custom properties in `src/index.css` |
 | Inter and Fira Code | Typography, loaded from Google Fonts |
 | ESLint 9 | Linting |
+| GitHub Pages and GitHub Actions | Hosting and automatic deployment |
 
 <p align="right"><a href="#harprosad-mandal-portfolio">Back to top</a></p>
 
@@ -144,6 +148,24 @@ Open [http://localhost:5173](http://localhost:5173) in your browser. No environm
 
 <p align="right"><a href="#harprosad-mandal-portfolio">Back to top</a></p>
 
+## Deployment
+
+<details>
+<summary>Show deployment details</summary>
+
+The site is hosted on GitHub Pages and deploys automatically. Every push to `main` builds the project and publishes it to [prasodium.github.io/portfolio](https://prasodium.github.io/portfolio/).
+
+| Item | Details |
+| --- | --- |
+| Workflow | `.github/workflows/deploy.yml` |
+| Triggers | A push to `main`, or a manual run from the Actions tab. Pull requests run the build only and never publish |
+| Pages source | GitHub Actions, set once under Settings → Pages → Build and deployment → Source |
+| Base path | The workflow sets `BASE_PATH` to `/portfolio/` so assets load from the project subpath. Local development and local builds use `/` |
+
+</details>
+
+<p align="right"><a href="#harprosad-mandal-portfolio">Back to top</a></p>
+
 ## Folder Structure
 
 <details>
@@ -151,6 +173,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser. No environm
 
 | Path | Contents |
 | --- | --- |
+| `.github/workflows/` | GitHub Actions workflow that builds and deploys the site to GitHub Pages |
 | `src/pages/` | Page sections: Hero, About, Skills, Projects and Contact |
 | `src/components/` | Navbar, Footer, Particles (WebGL background) and RotatingText (typewriter effect) |
 | `src/styles/` | One stylesheet per section or component |
