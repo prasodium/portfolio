@@ -29,8 +29,10 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <ul className="nav-menu-desktop">
           <li><a href="#about" className="nav-link">About</a></li>
+          <li><a href="#experience" className="nav-link">Experience</a></li>
           <li><a href="#skills" className="nav-link">Skills</a></li>
           <li><a href="#projects" className="nav-link">Projects</a></li>
+          <li><a href="#github" className="nav-link">GitHub</a></li>
           <li><a href="#contact" className="nav-link">Contact</a></li>
         </ul>
 
@@ -38,8 +40,10 @@ const Navbar = () => {
         <ul className={isOpen ? 'nav-menu-mobile active' : 'nav-menu-mobile'}>
           <li><a href="#hero" className="nav-link" onClick={handleLinkClick}>Home</a></li>
           <li><a href="#about" className="nav-link" onClick={handleLinkClick}>About</a></li>
+          <li><a href="#experience" className="nav-link" onClick={handleLinkClick}>Experience</a></li>
           <li><a href="#skills" className="nav-link" onClick={handleLinkClick}>Skills</a></li>
           <li><a href="#projects" className="nav-link" onClick={handleLinkClick}>Projects</a></li>
+          <li><a href="#github" className="nav-link" onClick={handleLinkClick}>GitHub</a></li>
           <li><a href="#contact" className="nav-link" onClick={handleLinkClick}>Contact</a></li>
         </ul>
       </div>

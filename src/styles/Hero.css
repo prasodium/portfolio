@@ -27,6 +27,33 @@
   margin: 0 auto;
 }
 
+.hero-eyebrow {
+  font-family: var(--font-mono);
+  font-size: clamp(14px, 2vw, 16px);
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-cta-secondary::before,
+.hero-cta-secondary::after {
+  border-color: var(--light-slate);
+}
+
+.hero-cta-secondary {
+  color: var(--light-slate);
+}
+
+.hero-cta-secondary:hover::before,
+.hero-cta-secondary:hover::after {
+  box-shadow: 0 0 2px var(--light-slate);
+}
+
 .hero-headline {
   font-family: var(--font-mono);
   font-size: clamp(40px, 8vw, 80px);

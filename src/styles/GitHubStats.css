@@ -1,0 +1,118 @@
+/* src/styles/GitHubStats.css */
+.gh-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+@media (min-width: 768px) {
+  .gh-stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.gh-stat-card {
+  background-color: var(--card-bg);
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  border-radius: 10px;
+  padding: 24px 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  text-decoration: none;
+}
+
+.gh-stat-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-color);
+}
+
+.gh-stat-icon {
+  color: var(--accent-color);
+  font-size: 28px;
+}
+
+.gh-stat-number {
+  color: var(--light-text);
+  font-family: var(--font-mono);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.gh-stat-label {
+  color: var(--light-slate);
+  font-size: 13px;
+  font-family: var(--font-mono);
+}
+
+.gh-username {
+  color: var(--light-text);
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.gh-cta {
+  color: var(--accent-color);
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.gh-langs {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--card-bg);
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  border-radius: 10px;
+  padding: 24px;
+}
+
+.gh-langs-title {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.gh-lang-row {
+  display: grid;
+  grid-template-columns: 140px 1fr 30px;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.gh-lang-row:last-child {
+  margin-bottom: 0;
+}
+
+.gh-lang-name {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--light-text);
+  text-align: right;
+}
+
+.gh-lang-bar {
+  height: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.gh-lang-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 1s ease;
+}
+
+.gh-lang-count {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--light-slate);
+}

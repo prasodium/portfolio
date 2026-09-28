@@ -1,14 +1,49 @@
-// src/components/Skills.jsx
+// src/pages/Skills.jsx
 import React from 'react';
+import { SiTypescript, SiJavascript, SiPython, SiCplusplus, SiReact, SiElectron, SiNodedotjs, SiExpress, SiFastapi, SiPostgresql, SiSqlite, SiPrisma, SiOpenai, SiLangchain, SiGit, SiGithub, SiArduino, SiRaspberrypi, SiVitest } from 'react-icons/si';
+import { FaRobot } from 'react-icons/fa';
 import '../styles/Skills.css';
 
-// Import your logos here
-// Example: import ReactLogo from '../assets/logos/react.svg';
-
 const skills = {
-  Frontend: ['HTML', 'CSS', 'JavaScript', 'React', 'Vue', 'Svelte'],
-  Backend: ['Node.js', 'Express', 'Python', 'Go', 'SQL', 'MongoDB'],
-  Tools: ['Git', 'Docker', 'Webpack', 'Figma', 'CI/CD', 'Jest'],
+  Languages: [
+    { name: 'TypeScript', icon: <SiTypescript /> },
+    { name: 'JavaScript', icon: <SiJavascript /> },
+    { name: 'Python', icon: <SiPython /> },
+    { name: 'C / C++', icon: <SiCplusplus /> },
+    { name: 'SQL', icon: null },
+  ],
+  'Frontend & Desktop': [
+    { name: 'React', icon: <SiReact /> },
+    { name: 'Electron', icon: <SiElectron /> },
+  ],
+  'Backend & Data': [
+    { name: 'Node.js', icon: <SiNodedotjs /> },
+    { name: 'Express', icon: <SiExpress /> },
+    { name: 'FastAPI', icon: <SiFastapi /> },
+    { name: 'REST APIs', icon: null },
+    { name: 'PostgreSQL', icon: <SiPostgresql /> },
+    { name: 'SQLite', icon: <SiSqlite /> },
+    { name: 'Prisma', icon: <SiPrisma /> },
+  ],
+  'AI & ML': [
+    { name: 'OpenAI API', icon: <SiOpenai /> },
+    { name: 'LangChain', icon: <SiLangchain /> },
+    { name: 'RAG', icon: null },
+    { name: 'Prompt Engineering', icon: null },
+  ],
+  Embedded: [
+    { name: 'ESP32', icon: <SiArduino /> },
+    { name: 'Arduino', icon: <SiArduino /> },
+    { name: 'Raspberry Pi', icon: <SiRaspberrypi /> },
+    { name: 'Robotics', icon: <FaRobot /> },
+  ],
+  'Tools & Testing': [
+    { name: 'Git', icon: <SiGit /> },
+    { name: 'GitHub', icon: <SiGithub /> },
+    { name: 'VS Code', icon: null },
+    { name: 'Vitest', icon: <SiVitest /> },
+    { name: 'Pytest', icon: null },
+  ],
 };
 
 const Skills = () => {
@@ -21,7 +56,10 @@ const Skills = () => {
             <h3>{category}</h3>
             <ul>
               {skills[category].map((skill) => (
-                <li key={skill}>{skill}</li>
+                <li key={skill.name}>
+                  {skill.icon && <span className="skill-icon">{skill.icon}</span>}
+                  <span>{skill.name}</span>
+                </li>
               ))}
             </ul>
           </div>

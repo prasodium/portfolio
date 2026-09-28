@@ -31,6 +31,9 @@
   margin-bottom: 10px;
   position: relative;
   padding-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .skill-category li::before {
@@ -38,4 +41,10 @@
   position: absolute;
   left: 0;
   color: var(--accent-color);
+}
+
+.skill-icon {
+  color: var(--accent-color);
+  font-size: 16px;
+  display: inline-flex;
 }

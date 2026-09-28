@@ -46,7 +46,7 @@ A personal portfolio for a full-stack developer who builds things for the web.
 
 ## Overview
 
-A single-page portfolio built with React and Vite. It introduces the developer, lists their skills, showcases projects and gives visitors a way to get in touch. The site uses a dark theme with a teal accent, a WebGL particle background in the hero section, and a layout that adapts to mobile screens. The live site is hosted on GitHub Pages at [prasodium.github.io/portfolio](https://prasodium.github.io/portfolio/).
+A single-page portfolio built with React and Vite. It introduces the developer, maps out their experience on a timeline, lists their skills, showcases real GitHub projects with "how it works" pipelines, pulls live GitHub activity stats, and gives visitors a way to get in touch. The site uses a dark theme with a teal accent, a WebGL particle background in the hero section, and a layout that adapts to mobile screens. The live site is hosted on GitHub Pages at [prasodium.github.io/portfolio](https://prasodium.github.io/portfolio/).
 
 <p align="right"><a href="#harprosad-mandal-portfolio">Back to top</a></p>
 
@@ -55,9 +55,11 @@ A single-page portfolio built with React and Vite. It introduces the developer, 
 | Feature | Summary | Details |
 | --- | --- | --- |
 | Hero | Landing section with a particle background | [Hero Section](#hero-section) |
-| About | Short introduction | [About Section](#about-section) |
-| Skills | Technologies grouped by category | [Skills Section](#skills-section) |
-| Projects | Project showcase cards | [Projects Section](#projects-section) |
+| About | Introduction with fact cards | [About Section](#about-section) |
+| Experience | Work and leadership timeline | [Experience Section](#experience-section) |
+| Skills | Technologies grouped by category, with icons | [Skills Section](#skills-section) |
+| Projects | Real GitHub projects with card art and pipelines | [Projects Section](#projects-section) |
+| GitHub | Live repo/star/language stats from the GitHub API | [GitHub Section](#github-section) |
 | Contact | Email and social links | [Contact Section](#contact-section) |
 | Navigation | Fixed navbar with a mobile menu | [Navigation](#navigation) |
 | Scroll effects | Fade-in sections and smooth scrolling | [Scroll Effects](#scroll-effects) |
@@ -68,23 +70,31 @@ A single-page portfolio built with React and Vite. It introduces the developer, 
 
 ### Hero Section
 
-A full-height landing section with a WebGL particle background. A typewriter line cycles through "React Apps", "Cool Projects" and "Smart Robots", and the "View My Work" button scrolls to the projects.
+A full-height landing section with a WebGL particle background. A typewriter line cycles through "AI-Powered Products", "Full-Stack Apps" and "Embedded Systems", and the "View My Work" button scrolls to the projects. A secondary button links to the GitHub profile.
 
 ### About Section
 
-A short introduction to the developer and their current toolkit.
+An introduction covering full-stack AI products and embedded work, with four fact cards (education, CYBORG presidency, embedded + edge AI, open source).
+
+### Experience Section
+
+A vertical timeline of work experience and leadership: BlueCurrent internship, Elecson part-time role, CYBORG presidency, and RITVIC theatre — each with highlights.
 
 ### Skills Section
 
-Three cards, Frontend, Backend and Tools, each listing technologies.
+Six cards — Languages, Frontend & Desktop, Backend & Data, AI & ML, Embedded, Tools & Testing — each listing real technologies with brand icons.
 
 ### Projects Section
 
-Cards with an image, description, technology list and links to the source code and live demo. On wide screens the layout alternates sides from card to card. Cards are generated from a data array, so adding a project does not require changing the markup.
+Cards with generated CSS art headers (no external images), real descriptions, "how it works" pipelines, technology lists and links to the GitHub source. On wide screens the layout alternates sides from card to card. Cards are generated from a data array, so adding a project does not require changing the markup.
+
+### GitHub Section
+
+Live stats fetched from the GitHub API — public repos, stars, followers, and top languages by repo count — with a cached fallback if the request fails.
 
 ### Contact Section
 
-An email button and icon links to GitHub, LinkedIn and Twitter.
+An email button and icon links to GitHub, LinkedIn and X.
 
 ### Navigation
 
@@ -174,7 +184,7 @@ The site is hosted on GitHub Pages and deploys automatically. Every push to `mai
 | Path | Contents |
 | --- | --- |
 | `.github/workflows/` | GitHub Actions workflow that builds and deploys the site to GitHub Pages |
-| `src/pages/` | Page sections: Hero, About, Skills, Projects and Contact |
+| `src/pages/` | Page sections: Hero, About, Experience, Skills, Projects, GitHubStats and Contact |
 | `src/components/` | Navbar, Footer, Particles (WebGL background) and RotatingText (typewriter effect) |
 | `src/styles/` | One stylesheet per section or component |
 | `src/index.css` | Global styles, theme variables and fonts |

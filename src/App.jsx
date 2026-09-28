@@ -3,8 +3,10 @@ import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import Hero from './pages/Hero';
 import About from './pages/About';
+import Experience from './pages/Experience';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
+import GitHubStats from './pages/GitHubStats';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
@@ -42,10 +44,16 @@ function App() {
           <About />
         </AnimatedSection>
         <AnimatedSection>
+          <Experience />
+        </AnimatedSection>
+        <AnimatedSection>
           <Skills />
         </AnimatedSection>
         <AnimatedSection>
           <Projects />
+        </AnimatedSection>
+        <AnimatedSection>
+          <GitHubStats />
         </AnimatedSection>
         <AnimatedSection>
           <Contact />

@@ -21,7 +21,7 @@ const Contact = () => {
           <a href="https://linkedin.com/in/harprosad" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FaLinkedin />
           </a>
-          <a href="https://twitter.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+          <a href="https://x.com/prasodium" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
             <FaTwitter />
           </a>
         </div>
