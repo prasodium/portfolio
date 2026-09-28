@@ -90,7 +90,7 @@ Cards with generated CSS art headers (no external images), real descriptions, "h
 
 ### GitHub Section
 
-Live stats fetched from the GitHub API: public repos, stars, followers, and top languages by repo count, with a cached fallback if the request fails.
+Live stats fetched from the GitHub API: public repos, stars, and followers, plus top languages ranked by actual code usage (bytes summed across repos via the languages endpoint), refreshed daily and cached for 24 hours. Shows a loading state while fetching and an honest error message if the API is unreachable. No hardcoded numbers.
 
 ### Contact Section
 
