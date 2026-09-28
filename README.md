@@ -78,11 +78,11 @@ An introduction covering full-stack AI products and embedded work, with four fac
 
 ### Experience Section
 
-A vertical timeline of work experience and leadership: BlueCurrent internship, Elecson part-time role, CYBORG presidency, and RITVIC theatre — each with highlights.
+A vertical timeline of work experience and leadership: BlueCurrent internship, Elecson part-time role, CYBORG presidency, and RITVIC theatre, each with highlights.
 
 ### Skills Section
 
-Six cards — Languages, Frontend & Desktop, Backend & Data, AI & ML, Embedded, Tools & Testing — each listing real technologies with brand icons.
+Six cards (Languages, Frontend & Desktop, Backend & Data, AI & ML, Embedded, Tools & Testing), each listing real technologies with brand icons.
 
 ### Projects Section
 
@@ -90,7 +90,7 @@ Cards with generated CSS art headers (no external images), real descriptions, "h
 
 ### GitHub Section
 
-Live stats fetched from the GitHub API — public repos, stars, followers, and top languages by repo count — with a cached fallback if the request fails.
+Live stats fetched from the GitHub API: public repos, stars, followers, and top languages by repo count, with a cached fallback if the request fails.
 
 ### Contact Section
 

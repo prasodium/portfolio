@@ -12,7 +12,7 @@ const experienceData = [
     type: 'Internship',
     points: [
       'Engineered an IoT platform to configure, monitor and control connected devices through live dashboards.',
-      'Implemented remote transformer monitoring for Tata Power Delhi — tracking dissolved gas, current and voltage.',
+      'Implemented remote transformer monitoring for Tata Power Delhi, tracking dissolved gas, current and voltage.',
       'Integrated real-time alerts and dashboards so field engineers spot abnormal readings without manual checks.',
     ],
   },
@@ -31,7 +31,7 @@ const experienceData = [
   {
     icon: <FaUsers />,
     role: 'President (prev. Electronics Lead)',
-    org: 'CYBORG — NIT Rourkela',
+    org: 'CYBORG, NIT Rourkela',
     period: 'May 2024 – Present',
     type: 'Leadership',
     points: [
@@ -41,8 +41,8 @@ const experienceData = [
   },
   {
     icon: <FaTheaterMasks />,
-    role: 'Member — Acting',
-    org: 'RITVIC — NIT Rourkela',
+    role: 'Member (Acting)',
+    org: 'RITVIC, NIT Rourkela',
     period: 'May 2024 – Present',
     type: 'Extracurricular',
     points: [

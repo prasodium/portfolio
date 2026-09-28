@@ -10,6 +10,7 @@ import GitHubStats from './pages/GitHubStats';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import Particles from './components/Particles';
 
 // Helper component for the fade-in effect
 const AnimatedSection = ({ children }) => {
@@ -37,6 +38,21 @@ function App() {
 
   return (
     <div className="app">
+      <div className="global-particles" aria-hidden="true">
+        <Particles
+          particleColors={['#64ffda', '#ccd6f6']}
+          particleCount={250}
+          particleSpread={20}
+          speed={0.25}
+          particleBaseSize={80}
+          moveParticlesOnHover={false}
+          alphaParticles={true}
+          disableRotation={false}
+          particleHoverFactor={1.5}
+          sizeRandomness={0.8}
+          cameraDistance={15}
+        />
+      </div>
       <Navbar />
       <Hero />
       <main>

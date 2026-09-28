@@ -1,28 +1,11 @@
 // File: src/pages/Hero.jsx
 import React from 'react';
-import Particles from '../components/Particles';
 import RotatingText from '../components/RotatingText';
 import '../styles/Hero.css';
 
 const Hero = () => {
   return (
     <section id="hero" className="hero-section">
-      <div className="hero-background">
-        <Particles
-          particleColors={['#64ffda', '#ccd6f6']}
-          particleCount={250}
-          particleSpread={20}
-          speed={0.25}
-          particleBaseSize={80}
-          moveParticlesOnHover={false}
-          alphaParticles={true}
-          disableRotation={false}
-          particleHoverFactor={1.5}
-          sizeRandomness={0.8}
-          cameraDistance={15}
-        />
-      </div>
-
       <div className="hero-content">
         <p className="hero-eyebrow">Hi, my name is</p>
         <h1 className="hero-headline">
@@ -31,7 +14,7 @@ const Hero = () => {
         </h1>
 
         <h2 className="hero-subheadline">
-          Software Engineer — I build full-stack products end to end, with a focus on shipping AI-powered features.
+          Software Engineer building full-stack products end to end, with a focus on shipping AI-powered features.
         </h2>
 
         <p className="hero-description">

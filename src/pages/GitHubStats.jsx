@@ -84,7 +84,7 @@ const GitHubStats = () => {
     <section id="github" className="section">
       <h2 className="section-heading">GitHub Activity</h2>
       <p className="section-subheading">
-        {live ? 'Live from the GitHub API — always current.' : 'Cached snapshot — live data loads when you are online.'}
+        {live ? 'Live from the GitHub API, always current.' : 'Cached snapshot. Live data loads when you are online.'}
       </p>
 
       <div className="gh-stats">
@@ -119,7 +119,7 @@ const GitHubStats = () => {
       </div>
 
       <div className="gh-langs">
-        <h3 className="gh-langs-title">$ top languages — by repo count</h3>
+        <h3 className="gh-langs-title">$ top languages, by repo count</h3>
         {stats.langs.map((lang) => (
           <div className="gh-lang-row" key={lang.name}>
             <span className="gh-lang-name">{lang.name}</span>

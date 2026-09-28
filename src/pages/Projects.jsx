@@ -18,7 +18,7 @@ const projectsData = [
     title: 'AI Interviewer',
     repo: 'prasodium/ai-interviewer',
     description:
-      'A desktop app that turns a resume, job description, role and experience level into a personalized mock interview — adaptive questioning, answer evaluation and scoring, with speech-to-text and text-to-speech.',
+      'A desktop app that turns a resume, job description, role and experience level into a personalized mock interview: adaptive questioning, answer evaluation and scoring, with speech-to-text and text-to-speech.',
     pipeline: 'Resume + JD → Adaptive questions → Voice answers → AI scoring → Study tips',
     techStack: ['Electron', 'React', 'TypeScript', 'OpenAI API', 'SQLite'],
     initials: 'AI',
@@ -28,7 +28,7 @@ const projectsData = [
     title: 'ResumeForge',
     repo: 'prasodium/ResumeForge',
     description:
-      'A local-first desktop app that reads a job description and generates a tailored, ATS-friendly LaTeX resume — semantic retrieval, job-skill matching, automated LaTeX compilation with error repair.',
+      'A local-first desktop app that reads a job description and generates a tailored, ATS-friendly LaTeX resume: semantic retrieval, job-skill matching, automated LaTeX compilation with error repair.',
     pipeline: 'Job description → Skill matching → LaTeX draft → Auto-compile + error repair',
     techStack: ['Electron', 'React', 'TypeScript', 'OpenAI API', 'LaTeX'],
     initials: 'RF',
@@ -38,7 +38,7 @@ const projectsData = [
     title: 'agentshield',
     repo: 'prasodium/agentshield',
     description:
-      'An AI Agent Security Gateway & Red-Team Platform — a safety layer that inspects what autonomous agents do before they act, and probes them for weaknesses.',
+      'An AI Agent Security Gateway and Red-Team Platform: a safety layer that inspects what autonomous agents do before they act, and probes them for weaknesses.',
     pipeline: 'Agent request → Policy check → Red-team probes → Allow / block',
     techStack: ['Python', 'LLM Agents', 'Security'],
     initials: 'AS',
@@ -48,7 +48,7 @@ const projectsData = [
     title: 'nova-bot',
     repo: 'prasodium/nova-bot',
     description:
-      'An ESP32 robot car with a cloud LLM brain — sees with a camera, navigates with encoder PID + IMU, obeys voice commands by name, and talks back.',
+      'An ESP32 robot car with a cloud LLM brain: sees with a camera, navigates with encoder PID + IMU, obeys voice commands by name, and talks back.',
     pipeline: 'Camera → Vision LLM planner → FastAPI backend → Encoder PID + IMU → Voice',
     techStack: ['C++', 'ESP32', 'FastAPI', 'Vision LLM'],
     initials: 'NB',
@@ -58,7 +58,7 @@ const projectsData = [
     title: 'edge-fire-detection',
     repo: 'prasodium/edge-fire-detection',
     description:
-      'Real-time edge AI fire and smoke detection for Raspberry Pi 5 — lightweight YOLO models on CPU-only ONNX Runtime with temporal verification to cut false alarms.',
+      'Real-time edge AI fire and smoke detection for Raspberry Pi 5: lightweight YOLO models on CPU-only ONNX Runtime with temporal verification to cut false alarms.',
     pipeline: 'Camera → Lightweight YOLO → ONNX Runtime → Temporal verification → Alert',
     techStack: ['Python', 'YOLO', 'ONNX Runtime', 'Raspberry Pi'],
     initials: 'EF',
@@ -71,7 +71,7 @@ const Projects = () => {
     <section id="projects" className="section">
       <h2 className="section-heading">Featured Projects</h2>
       <p className="section-subheading">
-        Real things I built and shipped — sourced straight from my GitHub.
+        Real things I built and shipped, sourced straight from my GitHub.
       </p>
       <div className="projects-grid">
         {projectsData.map((project) => (
