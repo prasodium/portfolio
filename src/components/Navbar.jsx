@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <a href="#hero" className="navbar-logo font-bold text-2xl">
+        <a href="#hero" className="navbar-logo">
           HP
         </a>
 

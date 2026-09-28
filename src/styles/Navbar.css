@@ -27,12 +27,41 @@
 .navbar-logo {
   color: var(--accent-color);
   font-family: var(--font-mono);
-  justify-self: flex-start;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 2rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 2px solid var(--accent-color);
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+.navbar-logo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--accent-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  z-index: -1;
+}
+
+.navbar-logo:hover {
+  color: var(--dark-bg);
+}
+
+.navbar-logo:hover::before {
+  transform: scaleX(1);
 }
 
 .menu-icon {
