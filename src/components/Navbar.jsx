@@ -17,8 +17,16 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <a href="#hero" className="navbar-logo">
-          HP
+        <a href="#hero" className="navbar-logo" aria-label="Back to top">
+          <svg viewBox="0 0 48 52" aria-hidden="true">
+            <polygon
+              className="logo-hex"
+              points="24,2 44,13.5 44,38.5 24,50 4,38.5 4,13.5"
+            />
+            <text x="24" y="28" textAnchor="middle" dominantBaseline="middle" className="logo-text">
+              HP
+            </text>
+          </svg>
         </a>
 
         {/* Hamburger Icon */}
