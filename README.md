@@ -74,7 +74,7 @@ A full-height landing section with a WebGL particle background. A typewriter lin
 
 ### About Section
 
-An introduction covering full-stack AI products and embedded work, with four fact cards (education, CYBORG presidency, embedded + edge AI, open source).
+An introduction covering full-stack AI products and embedded work, plus a "currently" line, four fact cards, an education block (NIT Rourkela with coursework chips, HSC, SSC), a "beyond the code" trio (street theatre, mentoring, roots), and a personal quote.
 
 ### Experience Section
 
