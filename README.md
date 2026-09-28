@@ -74,7 +74,7 @@ A full-height landing section with a WebGL particle background. A typewriter lin
 
 ### About Section
 
-An introduction covering full-stack AI products and embedded work, plus a "currently" line, four fact cards, an education block (NIT Rourkela with coursework chips, HSC, SSC), a "beyond the code" trio (street theatre, mentoring, roots), and a personal quote.
+An introduction covering full-stack AI products and embedded work, plus a "currently" line (final year at NIT Rourkela, open to full-time SDE roles) and four fact cards (full-stack SDE, embedded + edge AI, CYBORG presidency, open source).
 
 ### Experience Section
 
